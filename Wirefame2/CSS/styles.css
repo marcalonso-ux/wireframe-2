@@ -183,23 +183,29 @@ p:not(.contenido2) {
 	flex-direction: row;
 	height: 100%;
 	margin-top: -9px;
+	gap: 125px;
 }
 
 .parte_izquierda{
 	border: 1px solid #666;
 	height: 100%;
 	margin: 0px;
+	width:  150px
 }
 
 .cuadrado{
 	border: 1px solid #666;
 	height: 50px;
-	weight : 150px;
+	width:  150px;
 	align-items: center;
 }
 
 
+flex3_flex{
+	display: flex;
+	flex-direction: column;
+}
 .Imagen_flex1{
 	background: url('../Imágenes/imagen1.png');
-	height: 50px;
+	width:  50px;
 }
