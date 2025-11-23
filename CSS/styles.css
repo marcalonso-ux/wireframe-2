@@ -172,9 +172,9 @@ th {
 .flex3 {
 	display: flex;
 	flex-direction: row;
-	height: 100%;
+	height: 507px;
 	margin-top: -9px;
-	gap: 20px;
+	gap: 200px;
 }
 
 .parte_izquierda{
@@ -221,11 +221,14 @@ th {
 .flex3_flex{
 	display: flex;
 	flex-direction: column;
+	gap: 70px;
+	align-items: center;
 }
 .Imagen_flex1{
 	background: url('../Imágenes/Imagen2.png');
 	width:  200px;
 	height: 200px;
+	align-items: center;
 }
 
 .p_Productes {
@@ -266,7 +269,7 @@ th {
     flex-direction: column;
     align-items: center;     
     width: 100%;
-	height: 700px;
+	height: 550px;
 }
 
 .grid2 {
@@ -312,5 +315,38 @@ textarea {
     background-color: #d0f9d7;
     border: 1px solid #98d7a5;
     font-size: 20px;
-    cursor: pointer;
+}
+
+.Último{
+	padding: 50px;
+}
+
+.flex_general{
+	display: flex;
+	flex-direction: row;
+	gap: 800px;
+}
+
+.flex1{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.Imagen2_flex1{
+	background: url('../Imágenes/Instagram.png');
+	width: 50px;
+	height: 50px;
+}
+
+.Imagen2_flex2 {
+	background: url('../Imágenes/facebook.png');
+	width: 50px;
+	height: 50px;
+}
+
+.Imagen2_flex3 {
+	background: url('../Imágenes/twitter.png');
+	width: 50px;
+	height: 50px;
 }
