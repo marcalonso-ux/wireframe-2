@@ -1,14 +1,24 @@
 body {
 	padding: 10 px;
-	font-family: 'montserrat';
+	font-family: sans-serif;
 }
 
-.h3 {
+h3 {
 	font-size: 50px;
 	font-weight: bold;
 	margin: 0 auto;
 	color: #2DC75C;
 	margin-top: 35px;
+}
+
+p:not(.contenido2) {
+	font-size: 20px;
+	text-align: center;
+}
+
+th {
+	font-size: 20px;
+	text-align: center;
 }
 
 .p_Negra {
@@ -155,11 +165,6 @@ body {
 	border: 1 px solid #666;
 }
 
-p:not(.contenido2) {
-	font-size: 20px;
-	text-align: center;
-}
-
 .p_SNoltros {
 	height: 500px;
 }
@@ -221,4 +226,37 @@ p:not(.contenido2) {
 	background: url('../Imágenes/Imagen2.png');
 	width:  200px;
 	height: 200px;
+}
+
+.p_Productes {
+	text-align: center;
+	height: 400px;
+	margin-bottom: 45px;
+}
+
+.tabla {
+    border-collapse: collapse; 
+    width: 700px;
+    font-size: 20px;
+    text-align: center;
+	margin-top: 45px;
+	margin: 50px auto;
+}
+
+.tabla th {
+    background-color: #c1f0c8;
+    padding: 10px 15px;
+}
+
+.tabla td {
+    padding: 12px 15px;
+}
+
+.gray-row {
+    background-color: #d3d3d3;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid #ccc;
 }
