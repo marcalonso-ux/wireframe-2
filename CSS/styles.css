@@ -3,6 +3,12 @@ body {
 	font-family: sans-serif;
 }
 
+@media (max-width: 1000px) and (max-height: 1000px){
+	body {
+		width: 830px;
+	}
+}
+
 h3 {
 	font-size: 50px;
 	font-weight: bold;
@@ -21,11 +27,23 @@ th {
 	text-align: center;
 }
 
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.p_Negra {
+		width: 0px;
+		height: 0px;
+	}
+}
 .p_Negra {
 	height: 70px;
 	background-color: #666666;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.p_Verde {
+		margin-top: -65px;
+	}
 }
 
 .p_Verde {
@@ -51,9 +69,21 @@ th {
 
 }
 
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.elementos1::before {
+		display: none;
+	}
+}
+
 .elementos1::before {
 	content: "← ";
 	color: whitesmoke;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.elementos1::after {
+		display: none;
+	}
 }
 
 .elementos1::after {
@@ -62,10 +92,22 @@ th {
 	margin: 5px;
 }
 
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.elemento2::before {
+		display: none;
+	}
+}
+
 .elemento2::before {
 	content: "↻ ";
 	color: whitesmoke;
 	margin: 15px;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.elemento3::before {
+		display: none;
+	}
 }
 
 .elemento3::before {
@@ -94,12 +136,31 @@ th {
 	font-size: 20px;
 }
 
+
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.flex2{
+		width: 25px;
+		height: 25px;
+		background-color: #666;
+		margin-left: -200px;
+	}
+}
+
 .flex2 {
 	display: flex;
 	flex-direction: row;
 	position: relative;
 	left: 800px;
 
+}
+
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.palabra1{
+		display: none;
+		background: url('../Imágenes/imagen1.png');
+		width: 25px;
+		height: 25px;
+	}
 }
 
 .palabra1 {
@@ -138,6 +199,13 @@ th {
 	text-align: center;
 }
 
+@media (max-width: 1000px) and (max-height: 1000px) {
+	.p_Serveis {
+		height: 1150px;
+	}
+	
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -148,11 +216,51 @@ th {
 	top: -20px;
 }
 
+
+@media (max-width: 1000px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img1"
+            "txt1"
+            "img2"
+            "txt2"
+            "img3"
+            "txt3";
+
+        padding: 0 200px;    
+        margin-top: 20px;
+        gap: 40px;     
+    }
+}
+
+@media (max-width: 1000px) {
+	.grid > div {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .grid > div:nth-child(1) { grid-area: img1; }
+    .grid > div:nth-child(4) { grid-area: txt1; }
+
+    .grid > div:nth-child(2) { grid-area: img2; }
+    .grid > div:nth-child(5) { grid-area: txt2; }
+
+    .grid > div:nth-child(3) { grid-area: img3; }
+    .grid > div:nth-child(6) { grid-area: txt3; }
+}
+
+
 .Imagenes1 {
 	background: url('../Imágenes/imagen1.png');
 	height: 200px;
 }
-
 
 .Imagenes {
 	border: 1px solid #666;
@@ -161,12 +269,33 @@ th {
 	top: 90px;
 }
 
+@media (max-width: 1000px) and (max-height: 1000px){
+	.Imagenes {
+        padding: 20px;
+    }
+
+}
+
 .rectangulo {
 	border: 1 px solid #666;
 }
 
 .p_SNoltros {
-	height: 500px;
+	height: 547px;
+}
+
+.titulo{
+	position: relative;
+	left: 750px;
+	top: 50px;
+}
+
+@media (max-width: 1000px){
+	.titulo {
+        position: relative;
+		left: 320px;
+    }
+
 }
 
 .flex3 {
@@ -181,7 +310,15 @@ th {
 	border: 1px solid #666;
 	height: 100%;
 	margin: 0px;
-	width:  400px
+	width:  400px;
+	height: 590px;
+	margin-top: -85px;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px){
+	.parte_izquierda {
+        width: 230px;
+    }
 }
 
 .dentro_p_izquierda{
@@ -209,6 +346,25 @@ th {
 	opacity: 0.7;
 }
 
+.Nosaltres_flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 250px;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px){
+	.Nosaltres_flex {
+        display: flex;
+		flex-direction: column;
+		gap: 25px;
+		position: relative;
+		right: 10px;
+		top: 170px;
+    }
+
+}
+
 .cuadrado{
 	border: 1px solid #666;
 	height: 250px;
@@ -216,7 +372,16 @@ th {
 	align-items: center;
 	margin-top: 130px;
 	display: flex;
+	margin-top: -25px;
 }
+
+@media (max-width: 1000px) and (max-height: 1000px){
+	.cuadrado {
+        height: 130px;
+    }
+
+}
+
 
 .flex3_flex{
 	display: flex;
@@ -224,11 +389,21 @@ th {
 	gap: 70px;
 	align-items: center;
 }
+
+
 .Imagen_flex1{
 	background: url('../Imágenes/Imagen2.png');
 	width:  200px;
 	height: 200px;
 	align-items: center;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px){
+	.Imagen_flex1 {
+        height: 130px;
+		width: 200px;
+    }
+
 }
 
 .p_Productes {
@@ -321,10 +496,37 @@ textarea {
 	padding: 50px;
 }
 
+@media (max-width: 1000px) and (max-height: 1000px){
+	.ultimo_flex{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}
+
+@media (max-width: 1000px) and (max-height: 1000px){
+	.ultimo_flex{
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
 .flex_general{
 	display: flex;
 	flex-direction: row;
 	gap: 800px;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px){
+	.flex_general {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	}
+	
 }
 
 .flex1{
