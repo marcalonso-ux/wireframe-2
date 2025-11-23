@@ -260,3 +260,57 @@ th {
 .tabla td {
     border: 1px solid #ccc;
 }
+
+.cuadrado1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    width: 100%;
+	height: 700px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 220px); 
+    gap: 20px;
+    justify-content: center;  
+    margin-bottom: 40px;
+	margin-top: 25px;
+}
+
+.grid2 input {
+    padding: 12px;
+    background: #c8f7d4;
+    border: 1px solid #666;
+    font-size: 18px;
+}
+
+.contenedor-abajo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;           
+	padding-right: 120px;  
+}
+
+
+textarea {
+    width: 450px; 
+	height: 250px;        
+    padding: 50pxpx;        
+    background-color: #d0f9d7;
+    border: 1px solid #98d7a5;
+    font-size: 18px;
+    resize: vertical;   
+    box-sizing: border-box;
+}
+
+
+.enviar {
+    height: 60px;        
+    padding: 0 25px;
+    background-color: #d0f9d7;
+    border: 1px solid #98d7a5;
+    font-size: 20px;
+    cursor: pointer;
+}
